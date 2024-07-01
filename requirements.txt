@@ -1,0 +1,9 @@
+timm
+torch==2.0.0
+torchvision==0.15.0
+opencv-python-headless
+tensorboard
+numpy==1.19.5
+pandas==1.4.1
+mxnet
+pyarrow
