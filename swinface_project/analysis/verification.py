@@ -6,7 +6,7 @@ import torch
 import torch.distributed as dist
 import math
 
-from utils.utils_logging import AverageMeter
+from swinface_project.utils.utils_logging import AverageMeter
 from torch.utils.tensorboard import SummaryWriter
 from torch import distributed
 from .task_name import ANALYSIS_TASKS

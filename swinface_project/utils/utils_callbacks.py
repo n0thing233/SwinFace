@@ -5,11 +5,11 @@ from typing import List
 
 import torch
 
-from eval import verification
-from utils.utils_logging import AverageMeter
+from swinface_project.eval import verification
+from swinface_project.utils.utils_logging import AverageMeter
 from torch.utils.tensorboard import SummaryWriter
 from torch import distributed
-from analysis import ANALYSIS_TASKS
+from swinface_project.analysis import ANALYSIS_TASKS
 
 class LimitedAvgMeter(object):
 

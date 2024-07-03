@@ -15,7 +15,7 @@ import cv2
 import numpy as np
 import torch
 from skimage import transform as trans
-from backbones import get_model
+from swinface_project.backbones import get_model
 from sklearn.metrics import roc_curve, auc
 
 from menpo.visualize.viewmatplotlib import sample_colours_from_colourmap

@@ -28,7 +28,7 @@ def convert_onnx(net, path_module, output, opset=11, simplify=False):
 if __name__ == '__main__':
     import os
     import argparse
-    from backbones import get_model
+    from swinface_project.backbones import get_model
 
     parser = argparse.ArgumentParser(description='ArcFace PyTorch to onnx')
     parser.add_argument('input', type=str, help='input backbone.pth file or path')

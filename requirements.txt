@@ -1,6 +1,6 @@
 timm
 torch==2.0.0
-torchvision==0.15.0
+torchvision==0.15.1
 opencv-python-headless
 tensorboard
 numpy==1.19.5

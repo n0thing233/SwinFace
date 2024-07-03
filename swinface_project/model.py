@@ -1,6 +1,6 @@
 
-from backbones import get_model
-from analysis import subnets
+from swinface_project.backbones import get_model
+from swinface_project.analysis import subnets
 
 def build_model(cfg):
 

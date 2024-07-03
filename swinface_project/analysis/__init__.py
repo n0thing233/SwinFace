@@ -15,12 +15,12 @@ import os
 from typing import Iterable
 from functools import partial
 from torchvision import transforms
-from utils.utils_distributed_sampler import DistributedSampler
-from utils.utils_distributed_sampler import get_dist_info, worker_init_fn
+from swinface_project.utils.utils_distributed_sampler import DistributedSampler
+from swinface_project.utils.utils_distributed_sampler import get_dist_info, worker_init_fn
 
 from .datasets import AgeGenderDataset, CelebADataset, RAFDataset, FGnetDataset, ExpressionDataset, LAPDataset
 from .samplers import SubsetRandomSampler
-from dataset import MXFaceDataset
+from swinface_project.dataset import MXFaceDataset
 
 
 def get_analysis_train_dataloader(data_choose, config, local_rank) -> Iterable:

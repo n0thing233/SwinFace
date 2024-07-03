@@ -8,17 +8,17 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from timm.loss import LabelSmoothingCrossEntropy, SoftTargetCrossEntropy
 
-from backbones import get_model
+from swinface_project.backbones import get_model
 from dataset import get_dataloader
 from losses import CombinedMarginLoss
 from lr_scheduler import build_scheduler
 from partial_fc import PartialFC, PartialFCAdamW
-from analysis import *
+from swinface_project.analysis import *
 
-from utils.utils_callbacks import CallBackLogging, CallBackVerification
-from utils.utils_config import get_config
-from utils.utils_logging import AverageMeter, init_logging
-from utils.utils_distributed_sampler import setup_seed
+from swinface_project.utils.utils_callbacks import CallBackLogging, CallBackVerification
+from swinface_project.utils.utils_config import get_config
+from swinface_project.utils.utils_logging import AverageMeter, init_logging
+from swinface_project.utils.utils_distributed_sampler import setup_seed
 
 assert torch.__version__ >= "1.9.0", "In order to enjoy the features of the new torch, \
 we have upgraded the torch to 1.9.0. torch before than 1.9.0 may not work in the future."
